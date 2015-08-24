@@ -11,7 +11,7 @@ class DBInstance(AWSObject):
     resource_type = "AWS::RDS::DBInstance"
 
     props = {
-        'AllocatedStorage': (positive_integer, True),
+        'AllocatedStorage': (positive_integer, False),
         'AllowMajorVersionUpgrade': (boolean, False),
         'AutoMinorVersionUpgrade': (boolean, False),
         'AvailabilityZone': (basestring, False),
